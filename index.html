@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度舆情</title>
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+		<link rel="stylesheet" href="css/bdyq.css">
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+	</head>
+	<style>
+	
+	</style>
+	<script>
+		$(function(){
+				$('#window').fullpage({
+					'navigation': true,
+					navigationTooltips:["登录百度舆情","领先：数据收集与处理","全面：舆情分析逻辑与架构","专业专业数据可视化"],
+				
+					afterLoad:function(anchorLink,index){
+						$(".container").removeAttr("id").eq(index-1).attr({id:"active"});
+					}
+				});
+				$(".down a").click(function(){
+					$.fn.fullpage.moveSectionDown();
+				});
+				
+		})
+	</script>
+	<body>
+		<div id="top">
+			<div class="head"></div>
+		</div>		
+		<div id="window">
+			<!-- <h3>第一屏</h3> -->
+			<div class="section .section1">
+				<div class="container">
+					<div class="cloud1"></div>
+					<div class="cloud2"></div>
+					<div class="cloud3"></div>
+					<div class="baidu"></div>
+					<div class="feiji"></div>
+					<div class="chuan"></div>
+					<div class="bings1"></div>
+					<div class="bings2"></div>
+					<div class="bings3"></div>
+					<div class="down">
+						<a href="javascript:;">
+							<img src="img/jiantou.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--<!-- <h3>第二屏</h3> -->-->
+			<div class="section .section2">
+				<div class="container">
+					<div class="zi">
+						<div class="zuo"></div>
+						<div class="you">
+							<h4>数据收集与处理</h4>
+							<p>15年专业数据收集与语义分析技术积累<br>
+卓越极致，不断攀登</p>
+						</div>
+					</div>
+					<div class="tu"></div>
+					<div class="kuai kuai1"></div>
+					<div class="kuai kuai2"></div>
+					<div class="kuai kuai3"></div>
+					<div class="kuai kuai4"></div>
+					<div class="kuai kuai5"></div>
+					<div class="down">
+						<a href="javascript:;">
+							<img src="img/jiantou.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--<!-- <h3>第三屏</h3> -->-->
+			<div class="section .section3">
+				<div class="container">
+					<div class="fang fang1"></div>
+					<div class="fang fang2"></div>
+					<div class="fang fang3"></div>
+					<div class="fang fang4"></div>
+					<div class="fang fang5"></div>
+					<div class="zi">
+						<div class="zuo"></div>
+						<div class="you">
+							<h4>数据收集与处理</h4>
+							<p>15年专业数据收集与语义分析技术积累<br>
+卓越极致，不断攀登</p>
+						</div>
+					</div>
+					<div class="tu"></div>
+					<div class="down">
+						<a href="javascript:;">
+							<img src="img/jiantou.png" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--<!-- <h3>第四屏</h3> -->-->
+			<div class="section .section4">
+				<div class="container">
+					<div class="yuan"></div>
+					<div class="zi">
+						<div class="zuo"></div>
+						<div class="you">
+							<h4>数据收集与处理</h4>
+							<p>15年专业数据收集与语义分析技术积累<br>
+卓越极致，不断攀登</p>
+						</div>
+					</div>
+					<div class="tu"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
