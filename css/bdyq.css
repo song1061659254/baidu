@@ -26,6 +26,73 @@ body{
 	height: 60px;
 	margin: 0 auto;
 }
+.sange{
+    color: #666;
+    font-weight: 500;
+    float:left;
+}
+.sange ul{
+    margin-left:60px;
+}
+.sange ul:after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+}
+.sange li{
+    position: relative;
+    display: list-item;
+    float:left;
+}
+.sange a{
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    font-size: 15px;
+    height: 28px;
+    padding-top: 32px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.sange a:hover{
+    color:#67cbff;
+}
+.baidu-logo{
+    background-image: url(../img/header.png);
+    background-position: -2px 0px;
+    display: block;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    float: left;
+}
+.help{
+    float: right;
+    margin-top:25px;
+}
+.help a{
+    color: #fff;
+    font-size: 12px;
+    padding: 0 10px;
+    text-decoration: none;
+}
+.help a:last-child{
+    color: #FFDA28;
+}
+.kehuduan i{
+    background-image: url(../img/header.png);
+    background-position: -88px -154px;
+    display: inline-block;
+    width: 32px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+
 /*window*/
 #window{
 		width:100%;
